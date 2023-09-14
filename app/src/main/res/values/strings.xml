@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">miniprojekt3.1</string>
+    <string name="waifu">Waifu</string>
+    <string name="dance">Dance</string>
+    <string name="create_new">Create new</string>
+    <string name="login">Login</string>
+    <string name="go_back">Go Back</string>
+    <string name="rick_n_morty">Rick n Morty</string>
+</resources>
