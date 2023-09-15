@@ -1,12 +1,18 @@
 package com.example.miniprojekt31
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -19,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val btnLogin: Button = findViewById(R.id.loginBtn)
         val btnCreateUser: Button = findViewById(R.id.createBtn)
         val db = Firebase.firestore
-        Log.d("Max", db.toString());
+        Log.d("Max", db.toString())
 
         val enterEmail: EditText = findViewById(R.id.emailBar)
         val enterPassword: EditText = findViewById(R.id.passwordBar)
